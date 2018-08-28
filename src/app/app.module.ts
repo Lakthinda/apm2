@@ -6,15 +6,19 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './home/welcome/welcome.component';
-import { ProductListComponent } from './products/product-list/product-list/product-list.component';
-import { ProductDetailComponent } from './products/product-detail/product-detail/product-detail.component';
+import { ProductDetailComponent } from './products/product-detail/product-detail.component';
+import { ProductListComponent } from './products/product-list/product-list.component';
+import { StarComponent } from './shared/star.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     ProductListComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    StarComponent
   ],
   imports: [
     BrowserModule,
