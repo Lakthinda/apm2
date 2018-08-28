@@ -9,6 +9,8 @@ import { WelcomeComponent } from './home/welcome/welcome.component';
 import { ProductDetailComponent } from './products/product-detail/product-detail.component';
 import { ProductListComponent } from './products/product-list/product-list.component';
 import { StarComponent } from './shared/star.component';
+import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
+import { ProductDetailGuard } from './products/product-detail/product-detail.guard';
 
 
 
@@ -18,7 +20,8 @@ import { StarComponent } from './shared/star.component';
     WelcomeComponent,
     ProductListComponent,
     ProductDetailComponent,
-    StarComponent
+    StarComponent,
+    ConvertToSpacesPipe
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,9 @@ import { StarComponent } from './shared/star.component';
     HttpClientModule,
     RouterModule.forRoot([
        {path: 'welcome', component: WelcomeComponent},
-       {path: 'products/:id', component: ProductDetailComponent},
+       {path: 'products/:id',
+        canActivate: [ProductDetailGuard],
+        component: ProductDetailComponent},
        {path: 'products', component: ProductListComponent},
        {path: '', redirectTo: 'welcome', pathMatch: 'full'},
        {path: '**', redirectTo: 'welcome', pathMatch: 'full'}
