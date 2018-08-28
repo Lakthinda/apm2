@@ -1,0 +1,22 @@
+[
+  {
+    "productId":1,
+    "productName":"Garden Cart",
+    "productCode":"GDN-0023",
+    "releaseDate":"March 18, 2016",
+    "description": "15 gallon capacity rolling garden",
+    "price": 32.99,
+    "starRating":2.2,
+    "imgUrl":"https://images.homedepot-static.com/productImages/6a2a5cd1-9fb0-487e-b1e6-bb8ee964b7e0/svn/gorilla-carts-yard-carts-gor801-64_1000.jpg"
+  },
+  {
+    "productId":2,
+    "productName":"Hammer",
+    "productCode":"TBX-0048",
+    "releaseDate":"May 18, 2018",
+    "description": "Hammer made of Woood",
+    "price": 199.99,
+    "starRating":3.3,
+    "imgUrl":"https://s.hswstatic.com/gif/hammer-1.jpg"
+  }
+]
